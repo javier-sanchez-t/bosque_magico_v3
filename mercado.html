@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ <script src="./js/loadingoverlay.min.js"></script>
+ <script>
+  var tmrReady = setInterval(isPageFullyLoaded, 1000);
+  var interactive = false;
+
+  function isPageFullyLoaded() {
+   if (document.readyState == "interactive" && !interactive) {
+    $.LoadingOverlay("show");
+    interactive = true;
+   }
+
+   if (document.readyState == "complete") {
+    $.LoadingOverlay("hide");
+    clearInterval(tmrReady);
+   }
+  }
+ </script>
+ <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="./css/customV2_10.css" />
+ <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
+ <!--link rel="stylesheet" type="text/css" href="./css/hover-min.css" /-->
+
+ <title>Bosque Mágico</title>
+ <link rel="icon" href="img/icons/perfil.jpg">
+
+ <!-- Global site tag (gtag.js) - Google Ads: 849916386 --> 
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-849916386"></script> 
+ <script> 
+ window.dataLayer = window.dataLayer || []; 
+ function gtag(){
+   dataLayer.push(arguments);} 
+   gtag('js', new Date()); 
+   gtag('config', 'AW-849916386'); 
+ </script> 
+
+  <!-- Event snippet for Contacto Whatsapp conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+ <script> 
+ function gtag_report_conversion(url) { 
+   var callback = function () { 
+     if (typeof(url) != 'undefined') { 
+       window.location = url; } 
+       }; 
+       gtag('event', 'conversion', { 'send_to': 'AW-849916386/oooPCLnx69ECEOLjopUD', 'event_callback': callback }); 
+       return false; } 
+  </script> 
+  
+</head>
+
+<body>
+
+     <!-- Messenger plugin del chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your plugin del chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+ 
+   <script>
+     var chatbox = document.getElementById('fb-customer-chat');
+     chatbox.setAttribute("page_id", "367692773567276");
+     chatbox.setAttribute("attribution", "biz_inbox");
+ 
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v12.0'
+       });
+     };
+ 
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+
+ <!-- NAV BAR-->
+ <a onclick="location.href='index.html';" class="logo logoMobile" style="display: none;">
+  <img src="img/header/bosque_magico_V2.png" style="width: 120px;">
+ </a>
+
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--a class="navbar-brand mx-auto" href="/" style="padding-right: 60px;">
+   <img src="img/header/bosque_magico_V2.png" style="width: 120px;">
+  </a-->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CONTACTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/contacto.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#GASTRONOMIA';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/gastronomia.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#PAQUETES';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/paquetes.png">
+     </a>
+    </li>
+
+
+    <li class="nav-item active" style="width: 300px;">
+     <a onclick="location.href='index.html';">
+      <img src="img/header/bosque_magico_V2.png" style="width: 100%;">
+     </a>
+    </li>
+
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#HOSPEDAJE';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/hospedaje.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CAMPAMENTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/campamento.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#RECORRIDOS';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/recorridos.png">
+     </a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+
+
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <table style="margin: 0 auto;">
+    <tr class="navOption">
+     <td>
+      <a onclick="location.href='index.html#RECORRIDOS';">
+       <img src="./img/icons_menu/recorridos_icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left">
+      <a onclick="location.href='index.html#RECORRIDOS';">RECORRIDOS</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a onclick="location.href='index.html#CAMPAMENTO';">
+       <img src="./img/icons_menu/campamento_icon.png" width="35" alt="Campamento">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a onclick="location.href='index.html#CAMPAMENTO';">CAMPAMENTO</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a onclick="location.href='index.html#HOSPEDAJE';">
+       <img src="./img/icons_menu/hospedaje_icon.png" width="35" alt="Hospedaje">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a onclick="location.href='index.html#HOSPEDAJE';">HOSPEDAJE</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a onclick="location.href='index.html#PAQUETES';">
+       <img src="./img/icons_menu/paquetes_icon.png" width="35" alt="Paquetes">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a onclick="location.href='index.html#PAQUETES';">PAQUETES</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a onclick="location.href='index.html#GASTRONOMIA';">
+       <img src="./img/icons_menu/gastronomia_icon.png" width="35" alt="Gastronomía">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a onclick="location.href='index.html#GASTRONOMIA';">GASTRONOMÍA</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a onclick="location.href='index.html#CONTACTO';">
+       <img src="./img/icons_menu/campamento_icon.png" width="35" alt="Contacto">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a onclick="location.href='index.html#CONTACTO';">CONTACTO</a>
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+
+
+ <!--MERCADO-->
+ <div class="container mercadoSection" id="GASTRONOMIA">
+  <div class="row" style="padding-bottom: 20px;" data-aos="fade-right">
+   <img src="./img/icons/Nuevo_v2.png" alt="Nuevo" class="w120" width="130">
+  </div>
+
+  <div class="row mercadoBanner" data-aos="fade-right">
+   <div class="col-12 col-sm-12 padT20 padB20 center" style="padding: 20px 0px 20px 0px;">
+    <img src="./img/mercado_estacion/bosque-magico-fondo-mercado-la-estacion.png" alt="Mercado La Estación"
+     style="width: 500px;" class="w75pct">
+   </div>
+  </div>
+
+
+  <!--div class="row" style="padding: 130px 0px 120px 0px;" data-aos="fade-up" id="OPTIONS">
+   <div class="col-6 col-sm-6 col-lg-3 center padB20">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=MOKA';" id="BTN_MOKA">
+     <img src="img/mercado_estacion/moka.png" alt="Moka Haus Café" style="width: 200px;" class="optionsSection">
+    </a>
+   </div>
+   <div class="col-6 col-sm-6 col-lg-3 center">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';"
+     id="BTN_CHURRERIA">
+     <img src="img/mercado_estacion/la_antigua.png" alt="Churrería La Antigua" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
+   <div class="col-6 col-sm-6 col-lg-3 center">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';">
+     <img src="img/mercado_estacion/pizzas.png" alt="Churreria La Antigua" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
+   <div class="col-6 col-sm-6 col-lg-3 center">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';">
+     <img src="img/mercado_estacion/vagon.png" alt="Churreria La Antigua" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
+  </div-->
+
+  <div class="row" style="padding: 130px 0px 120px 0px;" data-aos="fade-up" id="OPTIONS">
+    <div class="col-3 col-sm-3 col-lg-3 center">
+
+    </div>
+    <div class="col-6 col-sm-6 col-lg-6 center">
+     <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=MERCADO';"
+      id="BTN_MERCADO">
+      <img src="img/mercado_estacion/puestos_mercado_la_estacion.png" alt="Mercado la estación" style="width: 200px;"
+       class="optionsSection">
+     </a>
+    </div>
+    <div class="col-3 col-sm-3 col-lg-3 center">
+
+    </div>
+   </div>
+
+ </div>
+ <!--END OF MERCADO-->
+
+  <!-- MOKA -->
+ <div id="MOKA">
+  <div class="container mercado">
+   <div class="row">
+    <div class="col-12 center title">
+     Mercado la estación
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 10px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     Área de recreación al aire libre especializada en alimentos y bebidas con temática de antaño donde te transportarás
+     al Tlaxcala que presenció la época del ferrocarril mexicano, en ella se ofrece servicio de comida rápida en
+     múltiples presentaciones a precios accesibles. <br>
+     ¡Ahora ya sabes dónde comer en Nanacamilpa!
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF MOKA-->
+
+ <!-- MERCADO GENERAL -->
+ <div id="MERCADO" style="display: none;">
+  <div class="container mercado">
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px; padding-top: 30px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Café La Antigua:</span> <br>
+      Encuentra las mejores bebidas de especialidad a base de café y otras más de tendencia mundial, gran variedad de sabores en capuccinos, chocolates y frappés.
+      Acompaña tu bebida favorita con una deliciosa crepa con alguna de nuestras dos bases ya sea de crema de avellanas o queso crema, adicionada con tu ingrediente favorito o si lo prefieres con un helado frito (tempura helado) con diversos toppings que puedes agregar.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Tacos de carne asada:</span> <br>
+      Que mejor que un buen taco y aún más si se trata de carne asada, prueba la deliciosa carne de la región, las inigualables salsas que realzan el auténtico sabor de nuestros tacos y agrega tu complemento favorito sin costo adicional.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Nachos:</span> <br>
+      Los ya famosos nachos, pero con el toque especial que no podía faltar, un antojo que no podrás resistir, exquisito queso derretido, rodajas de jalapeño y totopos especiales, disfruta de esta deliciosa botana mexicana.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Hamburguesas:</span> <br>
+      Gran variedad de hamburguesas, súper hot dogs, papás a la francesa, alitas y combos. Deleita tu paladar con las hamburguesas más famosas de Nanacamilpa. No olvides probar la oferta con ingredientes regionales.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Pizzas:</span> <br>
+      Deliciosas pizzas con el toque casero que las hace especiales, gran surtido de ingredientes,  no te vayas sin degustar la deliciosa pizza de temporada o elige entre la gran variedad del menú con ingredientes ya conocidos. 
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Antojitos:</span> <br>
+      Los antojitos mexicanos no podían faltar en nuestra oferta gastronómica, sabemos que vayas dónde vayas siempre habrá espacio para deleitar algo con sabor a México.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      <span style="font-size: 24px; line-height: 26px; font-weight: 600; text-transform: uppercase;">Recuerdos</span> <br>
+      Porque la experiencia es lo mejor, pero para que dejes huella de tu viaje es imprescindible dejar de lado un recuerdo de tu visita al Bosque de las Luciérnagas, tenemos para ti una oferta variada de algún presente alusivo a las luciérnagas.
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-12 descriptionText" style="padding-bottom: 40px;">
+      Esto y mucho más encontrarás en Mercado La Estación, queremos que estés feliz en tu viaje al santuario de las luciérnagas.
+      <br><br>
+      Mercado La Estación <br>
+      ¡Tus antojos en un solo lugar!
+
+    </div>
+   </div>
+
+  </div>
+ </div>
+ <!-- END OF MERCADO GENERAL-->
+
+ <!-- MOKA -->
+ <!--div id="MOKA" style="display: none;">
+  <div class="container mercado">
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     Área de recreación al aire libre especializada en alimentos y bebidas con temática de antaño donde te transportarás
+     al Tlaxcala que presenció la época del ferrocarril mexicano, en ella se ofrece servicio de comida rápida en
+     múltiples presentaciones a precios accesibles. <br>
+     ¡Ahora ya sabes dónde comer en Nanacamilpa!
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 center title">
+     Moka Haus Café
+    </div>
+    <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify;">
+     Establecimiento dedicado al café de especialidad. Con un horario de atención de 9:00 am a 9:00 pm, disfruta de las
+     mejores bebidas frías: frappés, café con hielo, smoothie o bebidas calientes: capuccinos, expres, lattes,
+     chocolates saborizados, tizanas, etc. servidas por un barista profesional. Acompáña tu bebida favorita con un
+     panini de la casa. No olvides probar nuestra especialidad moka menta ya sea en versión fría o caliente. ¡Vive tu
+     encuentro!
+    </div>
+
+    <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
+     <img src="./img/recorridos/Magueyes/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg" alt="Luciérnagas"
+      class="img-fluid" style="border-radius: 15px;">
+    </div>
+   </div>
+  </div>
+ </div-->
+ <!-- END OF MOKA-->
+
+ <!-- CHURRERIA -->
+ <!--div id="CHURRERIA" style="display: none;">
+  <div class="container mercado">
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     Área de recreación al aire libre especializada en alimentos y bebidas con temática de antaño donde te transportarás
+     al Tlaxcala que presencio la época del ferrocarril mexicano, en ella se ofrece servicio de comida rápida en
+     múltiples presentaciones a precios accesibles. <br>
+     ¡Ahora ya sabes dónde comer en Nanacamilpa!
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 center title">
+     Churrería La Antigua
+    </div>
+    <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify;">
+     Prueba un delicioso churro relleno ya sea de cajeta, chocolate, leche condensada, fresa, crema pastelera entre
+     otros sabores y acompáñalo con un espumoso chocolate de la casa o café de olla, deleita tu paladar y no dejes
+     perder esta rica tradición.
+    </div>
+
+    <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
+     <img src="./img/mercado_estacion/Churreria/img_4.jpg.png" alt="Luciérnagas"
+      class="img-fluid" style="border-radius: 15px;">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription" src="./img/mercado_estacion/Churreria/img_2.jpg" class="img-fluid"
+      alt="Churrería" loading="lazy">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription" src="./img/mercado_estacion/Churreria/img_3.jpg" class="img-fluid"
+      alt="Churrería" loading="lazy">
+    </div>
+
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+      <img class="imgCarruselMedio imgDescription" src="./img/mercado_estacion/Churreria/img_6.jpg" class="img-fluid"
+       alt="Churrería" loading="lazy">
+     </div>
+     <div class="col-sm-6" style="padding-bottom: 30px;">
+      <img class="imgCarruselMedio imgDescription" src="./img/mercado_estacion/Churreria/img_7.jpg" class="img-fluid"
+       alt="Churrería" loading="lazy">
+     </div>
+   </div>
+  </div>
+ </div-->
+
+ <!-- END OF CHURRERIA-->
+
+
+
+
+ <!--VOLCANES-->
+ <div>
+  <img src="./img/Footer/bosque-magico-volcanes_v2.png" alt="Volcanes" style="width: 100%; opacity: 0.30;">
+ </div>
+ <!--END OF VOLCANES-->
+
+ <!--FOOTER -->
+ <div class="container-fluid footer" id="CONTACTO">
+  <div class="row">
+   <div class="col-12 col-sm-6 col-lg-3">
+    <div style="width: 100%; text-align: center;">
+     <img src="./img/Footer/bosque magico.png" alt="Bosque Mágico" width="150">
+    </div>
+    <div class="center" style="padding-top: 15px;">
+     <table align="center">
+      <tr>
+       <td width="40">
+        <a href="https://www.facebook.com/luciernagasbosquemagico/" target="_blank" class="facebookParent">
+         <table border="0">
+          <tr>
+           <td style="width: 20px; height: 20px;" class="facebookIcon">
+           </td>
+          </tr>
+         </table>
+        </a>
+       </td>
+
+       <td width="40">
+        <a href="https://www.instagram.com/luciernagasbosquemagico?r=nametag" target="_blank" class="instagramParent">
+         <table border="0">
+          <tr>
+           <td style="width: 20px; height: 20px;" class="instagramIcon">
+           </td>
+          </tr>
+         </table>
+        </a>
+       </td>
+
+       <td width="40">
+        <a href="https://luciernagasbosquemagico.blogspot.com/" target="_blank" class="bloggerParent">
+         <table border="0">
+          <tr>
+           <td style="width: 20px; height: 20px;" class="bloggerIcon">
+           </td>
+          </tr>
+         </table>
+        </a>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20">
+    <div style="width: 100%;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        INFORMES Y RESERVAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="mailto:reservas@bosquemagico.com.mx" target="_blank" class="footerLink emailParent">
+      <table border="0">
+       <tr>
+        <td style="width: 20px; height: 20px;" class="emailIcon">
+        </td>
+        <td>
+         &nbsp;reservas@bosquemagico.com.mx
+        </td>
+       </tr>
+      </table>
+     </a>
+    </div>
+    <div>
+     <table>
+      <tr>
+       <td style="width: 30px; height: 20px;" class="whatsIcon">
+        <a
+         href="https://wa.me/+527481058284?text=Luciérnagas Bosque Mágico %0ATemporada Junio-Agosto. %0A%0A¡Hola! Deseo solicitar información sobre sus servicios. %0A¡Muchas gracias!"
+         class="footerLink parentPhone">
+         &nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+       </td>
+       <td>
+        <a href="tel:+52-748-105-8284" class="footerLink parentPhone">
+         <table border="0">
+          <tr>
+           <td style="width: 20px; height: 20px;" class="phoneIcon">
+           </td>
+           <td>
+            &nbsp;748 105 8284
+           </td>
+          </tr>
+         </table>
+        </a>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <table>
+      <tr>
+       <td style="width: 30px; height: 20px;" class="whatsIcon">
+        <a
+         href="https://wa.me/+527481060111?text=Luciérnagas Bosque Mágico %0ATemporada Junio-Agosto. %0A%0A¡Hola! Deseo solicitar información sobre sus servicios. %0A¡Muchas gracias!"
+         class="footerLink parentPhone">
+         &nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+       </td>
+       <td>
+        <a href="tel:+52-748-106-0111" class="footerLink parentPhone">
+         <table border="0">
+          <tr>
+           <td style="width: 20px; height: 20px;" class="phoneIcon">
+           </td>
+           <td>
+            &nbsp;748 106 0111
+           </td>
+          </tr>
+         </table>
+        </a>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div style="padding-top: 20px;">
+     <a href="#" data-toggle="modal" data-target="#agenciasModal" onclick="clearModalAgencias();"
+      class="footerLink footerButton">
+      AGENCIAS
+     </a>
+    </div>
+
+    <div style="width: 100%; padding-top: 30px;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        DESCARGAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="./img/informacion/Paquetes_V3.jpg" download class="footerLink">
+      PAQUETES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Recomendaciones_V3.jpg" download class="footerLink">
+      RECOMENDACIONES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Reglamento_V3.jpg" download class="footerLink">
+      REGLAMENTO
+     </a>
+    </div>
+    <div style="padding-top: 15px;">
+     <a href="./img/Footer/mapa.jpg" download class="footerLink footerButton">
+      MAPA
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20 padL20" style="padding-left: 40px;">
+    <div style="padding-bottom: 15px;">
+     <a href="https://www.e-tsw.com/Vuelos/Busqueda?af=AF-TUGV&ot=0&di=0&ln=esp&cu=PE&alf=0&GAProd=AV" target="_blank"
+      class="footerLink vuelosParent">
+      <table border="0">
+       <tr>
+        <td style="width: 20px; height: 20px;" class="vuelosIcon">
+        </td>
+        <td>
+         &nbsp;&nbsp;VUELOS
+        </td>
+       </tr>
+      </table>
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="#" data-toggle="modal" data-target="#facturaModal" onclick="clearModalFacturacion();"
+      class="footerLink facturacionParent">
+      <table border="0">
+       <tr>
+        <td style="width: 20px; height: 20px;" class="facturacionIcon">
+        </td>
+        <td>
+         &nbsp;&nbsp;FACTURACIÓN
+        </td>
+       </tr>
+      </table>
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="https://www.calendario-365.es/luna/lunar-fases.html" target="_blank" class="footerLink calendarioParent">
+      <table border="0">
+       <tr>
+        <td style="width: 20px; height: 20px;" class="calendarioIcon">
+        </td>
+        <td>
+         &nbsp;&nbsp;CALENDARIO LUNAR
+        </td>
+       </tr>
+      </table>
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a
+      href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x85d1d35efc2ddb45:0xf5b139dcffbbbe83?source=g.page.m.av"
+      target="_blank" class="footerLink llegarParent">
+      <table border="0">
+       <tr>
+        <td style="width: 20px; height: 20px;" class="llegarIcon">
+        </td>
+        <td>
+         &nbsp;&nbsp;COMO LLEGAR
+        </td>
+       </tr>
+      </table>
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 centerOnMobile padT20">
+    <div>
+     <img src="./img/sierra_nevada/bosque-magico-fondo-sierra-nevada.png" alt="Sierra Nevada" width="150">
+     <br class="desktop">
+     <br class="desktop">
+     <br class="desktop">
+     &nbsp;&nbsp;
+     <img src="./img/mercado_estacion/bosque-magico-fondo-mercado-la-estacion.png" alt="Sierra Nevada" width="150">
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="container-fluid footer2 padT20 center">
+  <div style="padding-bottom: 10px;">
+   <img src="./img/Footer/bosque magico.png" alt="Bosque mágico" width="100">
+  </div>
+  <div class="derechos">
+   &copy; 2020 Derechos Reservados. Bosque Mágico.
+  </div>
+ </div>
+ <!--END OF FOOTER -->
+
+ <!-- MODAL AGENCIAS -->
+ <div class="modal fade" id="agenciasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-lg" role="document" id="agenciasModalContent">
+   <div class="modal-content modal-content-agencias">
+    <div class="modal-header">
+     <div class="modalTittle">
+      <img src="./img/header/bosque_magico_V2.png" id="factModalLogo" width="150">
+      <br><br>
+      <h5 class="modal-title" id="exampleModalLabel">
+       AGENCIAS
+      </h5>
+      <h5>
+       Ingrese la siguiente información, pronto te contactaremos!
+      </h5>
+     </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <!--div class="alert alert-secondary" role="alert">
+             This is a secondary alert—check it out!
+           </div-->
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="nombreAgencia" class="col-sm-3 col-form-label">*Nombre de contacto o empresa:</label>
+      <div class="col-sm-7">
+       <input class="form-control" id="nombreAgencia">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="fechaAgencias" class="col-sm-3 col-form-label">*Fecha de viaje:</label>
+      <div class="col-sm-7">
+       <input type="date" class="form-control" id="fechaAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="noVisitantes" class="col-sm-3 col-form-label">*Número de visitantes:</label>
+      <div class="col-sm-7">
+       <input type="text" class="form-control" id="noVisitantes" min="1">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="telefonoAgencias" class="col-sm-3 col-form-label">*Teléfono:</label>
+      <div class="col-sm-7">
+       <input type="tel" class="form-control" id="telefonoAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="correoAgencias" class="col-sm-3 col-form-label">*Correo:</label>
+      <div class="col-sm-7">
+       <input type="email" class="form-control" id="correoAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-12" style="text-align: right;">
+       <button class="btn btn-primary" onclick="sendAgenciasForm();">Solicitar información</button>
+       <button data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF MODAL AGENCIAS -->
+
+ <!-- MODAL FACTURA -->
+ <div class="modal fade" id="facturaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-lg" role="document" id="facturaModalContent">
+   <div class="modal-content modal-content-facturas">
+    <div class="modal-header">
+     <div class="modalTittle">
+      <img src="./img/header/bosque_magico_V2.png" id="factModalLogo" width="150">
+      <br><br>
+      <h5 class="modal-title" id="exampleModalLabel">
+       FACTURAS
+      </h5>
+      <h5>
+       Ingrese los siguientes datos para facturar
+      </h5>
+     </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <!--div class="alert alert-secondary" role="alert">
+             This is a secondary alert—check it out!
+           </div-->
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="noReservacion" class="col-sm-3 col-form-label">*No.
+       Reservación:</label>
+      <div class="col-sm-7">
+       <input class="form-control" id="noReservacion">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="fechaReservacion" class="col-sm-3 col-form-label">*Fecha de viaje:</label>
+      <div class="col-sm-7">
+       <input type="date" class="form-control" id="fechaReservacion">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="cantidad" class="col-sm-3 col-form-label">*Cantidad:</label>
+      <div class="col-sm-7">
+       <input type="number" class="form-control" id="cantidad" min="1">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="rfc" class="col-sm-3 col-form-label">RFC:</label>
+      <div class="col-sm-7">
+       <input type="text" class="form-control" id="rfc">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">
+       <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="extranjero">
+        <label class="form-check-label" for="extranjero">
+         Extranjeros
+        </label>
+       </div>
+      </div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-12" style="text-align: right;">
+       <button class="btn btn-primary" onclick="sendFacturasForm();">Solicitar factura</button>
+       <button data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+ <!--END OF MODAL FACTURA -->
+
+ <!--TELEFONO-->
+ <a href="tel:+52-748-105-8284">
+  <img src="./img/icons/telefono_3.png" alt="Telefono" width="100" style="display: none;" class="phone">
+ </a>
+ <!-- SCROLL TOP-->
+ <img id="BTN_TOP" src="./img/icons/flecha_arriba_2.png" alt="Flecha" width="70">
+
+ <!-- JS, Popper.js, and jQuery -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="./menu_assets/js/menu_overlay.js"></script>
+ <script src="./js/smtp.js"></script>
+
+ <!--SCROLL EFECTS-->
+ <link href="./css/AOS.css" rel="stylesheet">
+ <script src="./js/AOS.js"></script>
+ <script>
+  AOS.init();
+ </script>
+
+ <script src="./js/customV2.js"></script>
+ <script src="./js/mercadoV2.js"></script>
+</body>
+
+</html>
