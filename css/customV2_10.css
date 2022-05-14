@@ -3,6 +3,7 @@
   --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
   --bg_sierra_banner: rgb(25, 123, 187, 0.65);
   --bg_hospedaje_banner: rgb(27, 19, 18, 0.65);
+  --bg_paquetes_banner: rgb(248, 26, 9, 0.65);
   --bg_mercado_banner: rgb(240, 151, 26, 0.40);
   --page-font-color: white;
   --bg-navbar: #B6C2F5;
@@ -19,6 +20,12 @@
 @font-face {
   font-family: 'HelveticaTitles';
   src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
+  /* Legacy iOS */
 }
 
 
@@ -154,7 +161,7 @@ h1.subtitleDesc {
   font-size: 22px;
 }
 
-h1.subtitleDesc2 {
+h1 {
   font-size: 2rem;
 }
 
@@ -179,55 +186,55 @@ h1.subtitleDesc2 {
 }
 
 .card-price {
-	display: inline-block;
-  
+  display: inline-block;
+
   width: auto;
-	height: 38px;
-	
-	background-color: #6ab070;
-	-webkit-border-radius: 3px 4px 4px 3px;
-	-moz-border-radius: 3px 4px 4px 3px;
-	border-radius: 3px 4px 4px 3px;
-	
-	border-left: 1px solid #6ab070;
+  height: 38px;
 
-	/* This makes room for the triangle */
-	margin-left: 19px;
-	
-	position: relative;
-	
-	color: white;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 38px;
+  background-color: #6ab070;
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
 
-	padding: 0 10px 0 10px;
+  border-left: 1px solid #6ab070;
+
+  /* This makes room for the triangle */
+  margin-left: 19px;
+
+  position: relative;
+
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+
+  padding: 0 10px 0 10px;
 }
 
 /* Makes the triangle */
 .card-price:before {
-	content: "";
-	position: absolute;
-	display: block;
-	left: -19px;
-	width: 0;
-	height: 0;
-	border-top: 19px solid transparent;
-	border-bottom: 19px solid transparent;
-	border-right: 19px solid #6ab070;
+  content: "";
+  position: absolute;
+  display: block;
+  left: -19px;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 19px solid #6ab070;
 }
 
 /* Makes the circle */
 .card-price:after {
-	content: "";
-	background-color: white;
-	border-radius: 50%;
-	width: 4px;
-	height: 4px;
-	display: block;
-	position: absolute;
-	left: -9px;
-	top: 17px;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 17px;
 }
 
 .card-body {
@@ -339,6 +346,8 @@ h1.subtitleDesc2 {
 
 .paquetesDes {
   font-size: 22px;
+  color: #ffffff;
+  background-color: #40324c;
 }
 
 .mercadoSection {
@@ -352,13 +361,14 @@ h1.subtitleDesc2 {
   /*border-bottom: solid 5px #ffffff;*/
 }
 
-.recorridosText {
+.subtitulo {
   color: #ffffff;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 60px;
+  line-height: 60px;
   font-weight: bold;
   border-bottom: solid 4px #ffffff;
   padding-bottom: 0px;
+  font-family: 'Pacifico', 'HelveticaText', sans-serif;
 }
 
 .descriptionText {
@@ -384,6 +394,10 @@ h1.subtitleDesc2 {
 
 .hospedajeBanner {
   background: var(--bg_hospedaje_banner);
+}
+
+.paquetesBanner {
+  background: var(--bg_paquetes_banner);
 }
 
 .mercadoBanner {
@@ -508,7 +522,7 @@ h1.subtitleDesc2 {
     font-size: 1.5rem;
   }
 
-  h1.subtitleDesc2 {
+  h1 {
     font-size: 1.5rem;
   }
 
@@ -613,7 +627,7 @@ h1.subtitleDesc2 {
     padding-top: 20px !important;
   }
 
-  .recorridosText {
+  .subtitulo {
     font-size: 40px !important;
     line-height: 40px !important;
   }

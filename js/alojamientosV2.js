@@ -35,7 +35,7 @@ window.onload = function () {
       btnOption = document.getElementById("BTN_SIERRA_NEVADA");
   }
 
-  btnOption.classList.add("shadow");
+  btnOption.firstElementChild.classList.add("shadow");
   section.classList.add("show");
   window.location.href = "#OPTIONS";
 };
