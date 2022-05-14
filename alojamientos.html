@@ -95,100 +95,99 @@
     <img src="img/header/bosque_magico_V3.png" style="width: 120px;">
   </a>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!--a class="navbar-brand mx-auto" href="/" style="padding-right: 60px;">
-   <img src="img/header/bosque_magico_V3.png" style="width: 120px;">
+   <img src="img/header/bosque-magicoV2.png" style="width: 120px;">
   </a-->
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav nav-fill w-100">
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CONTACTO';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/contacto.png">
+          <a class="nav-link hvr-float-shadow" onClick="goToSection('#CONTACTO');">
+            <img class="headerOpcionMenuImg" src="img/header/contacto.png">
           </a>
         </li>
 
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#GASTRONOMIA';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/gastronomia.png">
+          <a class="nav-link hvr-float-shadow" onclick="location.href='index.html#MERCADO';">
+            <img class="headerOpcionMenuImg" src="img/header/mercado.png">
           </a>
         </li>
 
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#PAQUETES';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/paquetes.png">
+          <a class="nav-link hvr-float-shadow" onclick="location.href='index.html#PAQUETES';">
+            <img class="headerOpcionMenuImg" src="img/header/paquetes.png">
           </a>
         </li>
 
 
-        <li class="nav-item active" style="width: 300px; text-align: center;">
+        <li class="nav-item active center">
           <a onclick="location.href='index.html';">
-            <img src="img/header/bosque_magico_V3.png" style="width: 60%;">
+            <img src="img/header/bosque_magico_V3.png" style="width: 140px;">
           </a>
         </li>
 
 
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#HOSPEDAJE';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/hospedaje.png">
+          <a class="nav-link hvr-float-shadow" onclick="location.href='index.html#ALOJAMIENTOS';">
+            <img class="headerOpcionMenuImg" src="img/header/alojamiento.png">
           </a>
         </li>
 
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CAMPAMENTO';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/campamento.png">
+          <a class="nav-link hvr-float-shadow" onclick="location.href='index.html#EXPERIENCIAS';">
+            <img class="headerOpcionMenuImg" src="img/header/experiencias.png">
           </a>
         </li>
 
         <li class="nav-item active d-none d-lg-block center">
-          <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#RECORRIDOS';">
-            <img class="headerOpcionMenuImg" src="img/icons_menu/recorridos.png">
+          <a class="nav-link hvr-float-shadow" onclick="location.href='index.html#RUTAS';">
+            <img class="headerOpcionMenuImg" src="img/header/rutas.png">
           </a>
         </li>
       </ul>
     </div>
   </nav>
 
-
   <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" id="CLOSE" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
       <table style="margin: 0 auto;">
         <tr class="navOption">
           <td>
-            <a onclick="location.href='index.html#RECORRIDOS';">
+            <a onclick="location.href='index.html#RUTAS';">
               <img src="./img/icons_menu/recorridos_icon.png" width="35" alt="Recorridos">
             </a>
           </td>
           <td align="left">
-            <a onclick="location.href='index.html#RECORRIDOS';">RECORRIDOS</a>
+            <a onclick="location.href='index.html#RUTAS';">Rutas</a>
           </td>
         </tr>
 
         <tr class="navOption">
           <td class="padT20">
-            <a onclick="location.href='index.html#CAMPAMENTO';">
+            <a onclick="location.href='index.html#EXPERIENCIAS';">
               <img src="./img/icons_menu/campamento_icon.png" width="35" alt="Campamento">
             </a>
           </td>
           <td align="left" class="padT20">
-            <a onclick="location.href='index.html#CAMPAMENTO';">CAMPAMENTO</a>
+            <a onclick="location.href='index.html#EXPERIENCIAS';">Experiencias</a>
           </td>
         </tr>
 
         <tr class="navOption">
           <td class="padT20">
-            <a onclick="location.href='index.html#HOSPEDAJE';">
+            <a onclick="location.href='index.html#ALOJAMIENTOS';">
               <img src="./img/icons_menu/hospedaje_icon.png" width="35" alt="Hospedaje">
             </a>
           </td>
           <td align="left" class="padT20">
-            <a onclick="location.href='index.html#HOSPEDAJE';">HOSPEDAJE</a>
+            <a onclick="location.href='index.html#ALOJAMIENTOS';">Alojamiento</a>
           </td>
         </tr>
 
@@ -199,36 +198,35 @@
             </a>
           </td>
           <td align="left" class="padT20">
-            <a onclick="location.href='index.html#PAQUETES';">PAQUETES</a>
+            <a onclick="location.href='index.html#PAQUETES';">Paquetes</a>
           </td>
         </tr>
 
         <tr class="navOption">
           <td class="padT20">
-            <a onclick="location.href='index.html#GASTRONOMIA';">
+            <a onclick="location.href='index.html#MERCADO';">
               <img src="./img/icons_menu/gastronomia_icon.png" width="35" alt="Gastronomía">
             </a>
           </td>
           <td align="left" class="padT20">
-            <a onclick="location.href='index.html#GASTRONOMIA';">GASTRONOMÍA</a>
+            <a onclick="location.href='index.html#MERCADO';">Mercadp</a>
           </td>
         </tr>
 
         <tr class="navOption">
           <td class="padT20">
-            <a onclick="location.href='index.html#CONTACTO';">
-              <img src="./img/icons_menu/campamento_icon.png" width="35" alt="Contacto">
+            <a onClick="goToSection('#CONTACTO');">
+              <img src="./img/icons_menu/contacto_icon.png" width="35" alt="Contacro">
             </a>
           </td>
           <td align="left" class="padT20">
-            <a onclick="location.href='index.html#CONTACTO';">CONTACTO</a>
+            <a onClick="goToSection('#CONTACTO');">Contacto</a>
           </td>
         </tr>
       </table>
 
     </div>
   </div>
-
 
 
   <!--ALOJAMIENTOS-->
