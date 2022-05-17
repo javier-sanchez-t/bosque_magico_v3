@@ -259,27 +259,27 @@ h1 {
 }
 
 .recorridos {
-  background-color: #4d6e5d;
+  background-color: #0D6129;
   color: #ffffff;
 }
 
 .campamento {
-  background-color: #466874;
+  background-color: #06446C;
   color: #ffffff;
 }
 
 .hospedaje {
-  background-color: #48445d;
+  background-color: #410F57;
   color: #ffffff;
 }
 
 .mercado {
-  background-color: #9d7a5a;
+  background-color: #FF7D00;
   color: #ffffff;
 }
 
 .indicaciones {
-  background-color: var(--bg_luciernagas);
+  background-color: #FFCF00;
   color: #ffffff;
 }
 
@@ -353,7 +353,7 @@ h1 {
 .paquetesDes {
   font-size: 22px;
   color: #ffffff;
-  background-color: #40324c;
+  background-color: #FF0000;
 }
 
 .mercadoSection {
