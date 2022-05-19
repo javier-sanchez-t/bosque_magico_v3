@@ -18,6 +18,10 @@ window.onload = function () {
       section = document.getElementById("PAQUETE_BRONCE_LOS_PINOS");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE_LOS_PINOS");
       break;
+    case 'PAQUETE_FINCA_ZAYAS':
+      section = document.getElementById("PAQUETE_FINCA_ZAYAS");
+      btnOption = document.getElementById("BTN_PAQUETE_FINCA_ZAYAS");
+      break;
     case 'PAQUETE_PLATINO_SAN_CAYETANO':
       section = document.getElementById("PAQUETE_PLATINO_SAN_CAYETANO");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_SAN_CAYETANO");
@@ -25,6 +29,10 @@ window.onload = function () {
     case 'PAQUETE_PLATINO_VILLAS_BOSQUE':
       section = document.getElementById("PAQUETE_PLATINO_VILLAS_BOSQUE");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_VILLAS_BOSQUE");
+      break;
+    case 'PAQUETE_PIEDRA_CANTEADA':
+      section = document.getElementById("PAQUETE_PIEDRA_CANTEADA");
+      btnOption = document.getElementById("BTN_PAQUETE_PIEDRA_CANTEADA");
       break;
     case 'PAQUETE_PLATINO_SIERRA_NEVADA':
       section = document.getElementById("PAQUETE_PLATINO_SIERRA_NEVADA");
