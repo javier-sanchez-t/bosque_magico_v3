@@ -18,6 +18,10 @@ window.onload = function () {
       section = document.getElementById("RESIDENCIAL_LOS_PINOS");
       btnOption = document.getElementById("BTN_RESIDENCIAL_LOS_PINOS");
       break;
+    case 'FINCA_ZAYAS':
+      section = document.getElementById("FINCA_ZAYAS");
+      btnOption = document.getElementById("BTN_FINCA_ZAYAS");
+      break;
     case 'HACIENDA_SAN_CAYETANO':
       section = document.getElementById("HACIENDA_SAN_CAYETANO");
       btnOption = document.getElementById("BTN_HACIENDA_SAN_CAYETANO");
