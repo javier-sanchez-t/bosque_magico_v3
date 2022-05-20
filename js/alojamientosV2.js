@@ -30,6 +30,10 @@ window.onload = function () {
       section = document.getElementById("VILLAS_DEL_BOSQUE");
       btnOption = document.getElementById("BTN_VILLAS_DEL_BOSQUE");
       break;
+    case 'PIEDRA_CANTEADA':
+      section = document.getElementById("PIEDRA_CANTEADA");
+      btnOption = document.getElementById("BTN_PIEDRA_CANTEADA");
+      break;
     case 'SIERRA_NEVADA':
       section = document.getElementById("SIERRA_NEVADA");
       btnOption = document.getElementById("BTN_SIERRA_NEVADA");
