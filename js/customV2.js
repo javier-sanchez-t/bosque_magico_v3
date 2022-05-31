@@ -1,113 +1,153 @@
-$(window).bind('scroll', function () {
-   if ($(window).scrollTop() > 50) {
-      $('.navbar').addClass('fixed-top');
-   } else {
-      $('.navbar').removeClass('fixed-top');
-   }
+$(window).bind("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $(".navbar").addClass("fixed-top");
+  } else {
+    $(".navbar").removeClass("fixed-top");
+  }
 });
 
-$('#INICIO_LINK').click(function () {
-   $("html, body").delay(0).animate({
-      scrollTop: $('#INICIO').offset().top
-   }, 1000);
+$("#INICIO_LINK").click(function () {
+  $("html, body")
+    .delay(0)
+    .animate(
+      {
+        scrollTop: $("#INICIO").offset().top,
+      },
+      1000
+    );
 });
 
 function goToSection(sectionName) {
-   $('#CLOSE').click();
-   $("html, body").delay(0).animate({
-      scrollTop: $(sectionName).offset().top
-   }, 1000);
+  $("#CLOSE").click();
+  $("html, body")
+    .delay(0)
+    .animate(
+      {
+        scrollTop: $(sectionName).offset().top,
+      },
+      1000
+    );
 }
 
 // Restricts input for the given textbox to the given inputFilter.
 function setInputFilter(textbox, inputFilter) {
-   ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function (event) {
-      textbox.addEventListener(event, function () {
-         if (inputFilter(this.value)) {
-            this.oldValue = this.value;
-            this.oldSelectionStart = this.selectionStart;
-            this.oldSelectionEnd = this.selectionEnd;
-         } else if (this.hasOwnProperty("oldValue")) {
-            this.value = this.oldValue;
-            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-         }
-      });
-   });
+  [
+    "input",
+    "keydown",
+    "keyup",
+    "mousedown",
+    "mouseup",
+    "select",
+    "contextmenu",
+    "drop",
+  ].forEach(function (event) {
+    textbox.addEventListener(event, function () {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      }
+    });
+  });
 }
 
 // Install input filters.
 setInputFilter(document.getElementById("cantidad"), function (value) {
-   return /^-?\d*$/.test(value);
+  return /^-?\d*$/.test(value);
 });
 
 setInputFilter(document.getElementById("noReservacion"), function (value) {
-   return /^-?\d*$/.test(value);
+  return /^-?\d*$/.test(value);
 });
 
 setInputFilter(document.getElementById("noVisitantes"), function (value) {
-   return /^-?\d*$/.test(value);
+  return /^-?\d*$/.test(value);
 });
 
 setInputFilter(document.getElementById("telefonoAgencias"), function (value) {
-   return /^-?\d*$/.test(value);
+  return /^-?\d*$/.test(value);
 });
 
-
 function clearModalFacturacion() {
-   document.getElementById("noReservacion").value = '';
-   document.getElementById("fechaReservacion").value = '';
-   document.getElementById("cantidad").value = '';
-   document.getElementById("rfc").value = '';
-   document.getElementById("extranjero").checked = false;
+  document.getElementById("noReservacion").value = "";
+  document.getElementById("fechaReservacion").value = "";
+  document.getElementById("cantidad").value = "";
+  document.getElementById("rfc").value = "";
+  document.getElementById("extranjero").checked = false;
 }
 
 function clearModalAgencias() {
-   document.getElementById("nombreAgencia").value = "";
-   document.getElementById("fechaAgencias").value = "";
-   document.getElementById("noVisitantes").value = "";
-   document.getElementById("telefonoAgencias").value = "";
-   document.getElementById("correoAgencias").value = "";
+  document.getElementById("nombreAgencia").value = "";
+  document.getElementById("fechaAgencias").value = "";
+  document.getElementById("noVisitantes").value = "";
+  document.getElementById("telefonoAgencias").value = "";
+  document.getElementById("correoAgencias").value = "";
 }
 
 function sendEmail(subject, bodyEmail, modalName, to) {
-   $.LoadingOverlay("show");
+  $.LoadingOverlay("show");
 
-   var xhttp = new XMLHttpRequest();
-   xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-         var result = JSON.parse(xhttp.responseText);
-         if (result.status == 200) {
-            alert("Sus datos han sido enviados, en breve atenderemos su solicitud. \n\n ¡Gracias!");
-         } else {
-            alert("Ocurrió un error con su solicitud, inténtelo más tarde.");
-         }
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var result = JSON.parse(xhttp.responseText);
+      if (result.status == 200) {
+        alert(
+          "Sus datos han sido enviados, en breve atenderemos su solicitud. \n\n ¡Gracias!"
+        );
+      } else {
+        alert("Ocurrió un error con su solicitud, inténtelo más tarde.");
       }
+    }
 
-      $.LoadingOverlay("hide");
-      $('#' + modalName).modal('hide');
-   };
-   xhttp.open("GET", "https://www.bosquemagico.com.mx/mail.php?to="+to+"&subject="+subject+"&message="+bodyEmail, true);
-   xhttp.send();
+    $.LoadingOverlay("hide");
+    $("#" + modalName).modal("hide");
+  };
+  xhttp.open(
+    "GET",
+    "https://www.bosquemagico.com.mx/mail.php?to=" +
+      to +
+      "&subject=" +
+      subject +
+      "&message=" +
+      bodyEmail,
+    true
+  );
+  xhttp.send();
 }
 
-
 function sendAgenciasForm() {
-   var nombreAgencia = document.getElementById("nombreAgencia").value;
-   var fechaAgencias = document.getElementById("fechaAgencias").value;
-   var noVisitantes = document.getElementById("noVisitantes").value;
-   var telefonoAgencias = document.getElementById("telefonoAgencias").value;
-   var correoAgencias = document.getElementById("correoAgencias").value;
+  var nombreAgencia = document.getElementById("nombreAgencia").value;
+  var fechaAgencias = document.getElementById("fechaAgencias").value;
+  var noVisitantes = document.getElementById("noVisitantes").value;
+  var telefonoAgencias = document.getElementById("telefonoAgencias").value;
+  var correoAgencias = document.getElementById("correoAgencias").value;
 
-   if (nombreAgencia == null || nombreAgencia == undefined || nombreAgencia.trim() == ""
-      || fechaAgencias == null || fechaAgencias == undefined || fechaAgencias.trim() == ""
-      || noVisitantes == null || noVisitantes == undefined || noVisitantes.trim() == ""
-      || telefonoAgencias == null || telefonoAgencias == undefined || telefonoAgencias.trim() == ""
-      || correoAgencias == null || correoAgencias == undefined || correoAgencias.trim() == "") {
-      alert("Ingrese los campos requeridos.");
-      return;
-   }
+  if (
+    nombreAgencia == null ||
+    nombreAgencia == undefined ||
+    nombreAgencia.trim() == "" ||
+    fechaAgencias == null ||
+    fechaAgencias == undefined ||
+    fechaAgencias.trim() == "" ||
+    noVisitantes == null ||
+    noVisitantes == undefined ||
+    noVisitantes.trim() == "" ||
+    telefonoAgencias == null ||
+    telefonoAgencias == undefined ||
+    telefonoAgencias.trim() == "" ||
+    correoAgencias == null ||
+    correoAgencias == undefined ||
+    correoAgencias.trim() == ""
+  ) {
+    alert("Ingrese los campos requeridos.");
+    return;
+  }
 
-   var bodyEmail = `
+  var bodyEmail = `
     <html>
       <head>
          <title>Bosque Mágico</title>
@@ -134,41 +174,58 @@ function sendAgenciasForm() {
       </body>
    </html>`;
 
-   sendEmail('Solicitud de información: AGENCIAS', bodyEmail, 'agenciasModal', 'reservas@bosquemagico.com.mx');
-   clearModalAgencias();
+  sendEmail(
+    "Solicitud de información: AGENCIAS",
+    bodyEmail,
+    "agenciasModal",
+    "reservas@bosquemagico.com.mx"
+  );
+  clearModalAgencias();
 }
 
-
 function sendFacturasForm() {
-   var noReservacion = document.getElementById("noReservacion").value;
-   var fechaViaje = document.getElementById("fechaReservacion").value;
-   var cantidad = document.getElementById("cantidad").value;
-   var RFC = document.getElementById("rfc").value;
-   var extranjero = document.getElementById("extranjero").checked;
+  var noReservacion = document.getElementById("noReservacion").value;
+  var fechaViaje = document.getElementById("fechaReservacion").value;
+  var cantidad = document.getElementById("cantidad").value;
+  var RFC = document.getElementById("rfc").value;
+  var extranjero = document.getElementById("extranjero").checked;
 
-   if (noReservacion == null && noReservacion == undefined && noReservacion == ""
-      && fechaViaje == null && fechaViaje == undefined && fechaViaje == ""
-      && cantidad == null && cantidad == undefined && cantidad == "") {
-      alert("Ingrese los campos requeridos.");
-      return;
-   }
+  if (
+    noReservacion == null &&
+    noReservacion == undefined &&
+    noReservacion == "" &&
+    fechaViaje == null &&
+    fechaViaje == undefined &&
+    fechaViaje == "" &&
+    cantidad == null &&
+    cantidad == undefined &&
+    cantidad == ""
+  ) {
+    alert("Ingrese los campos requeridos.");
+    return;
+  }
 
-   var bodyEmail = "<strong>No. Reservación:</strong> " + noReservacion + "<br/>" +
-      "<strong>Fecha de viaje:</strong> " + fechaViaje + "<br/>" +
-      "<strong>Cantidad:</strong> $" + cantidad;
+  var bodyEmail =
+    "<strong>No. Reservación:</strong> " +
+    noReservacion +
+    "<br/>" +
+    "<strong>Fecha de viaje:</strong> " +
+    fechaViaje +
+    "<br/>" +
+    "<strong>Cantidad:</strong> $" +
+    cantidad;
 
-   if (RFC != null && RFC != undefined && RFC != "") {
-      bodyEmail += "<br/><strong>RFC:</strong> " + RFC;
-   }
+  if (RFC != null && RFC != undefined && RFC != "") {
+    bodyEmail += "<br/><strong>RFC:</strong> " + RFC;
+  }
 
-   if (extranjero) {
-      bodyEmail += "<br/><strong>Extranjero: </strong> Sí";
-   } else {
-      bodyEmail += "<br/><strong>Extranjero: </strong> No";
-   }
+  if (extranjero) {
+    bodyEmail += "<br/><strong>Extranjero: </strong> Sí";
+  } else {
+    bodyEmail += "<br/><strong>Extranjero: </strong> No";
+  }
 
-
-   bodyEmail = `
+  bodyEmail = `
    <html>
      <head>
         <title>Bosque Mágico</title>
@@ -191,33 +248,43 @@ function sendFacturasForm() {
      </body>
   </html>`;
 
-   sendEmail('Solicitud de FACTURA', bodyEmail, 'facturaModal', 'facturas@bosquemagico.com.mx');
-   clearModalFacturacion();
+  sendEmail(
+    "Solicitud de FACTURA",
+    bodyEmail,
+    "facturaModal",
+    "facturas@bosquemagico.com.mx"
+  );
+  clearModalFacturacion();
 }
 
-
-$('#BTN_TOP').click(function () {
-   $("html, body").delay(0).animate({
-      scrollTop: 0
-   }, 1000);
+$("#BTN_TOP").click(function () {
+  $("html, body").delay(0).animate(
+    {
+      scrollTop: 0,
+    },
+    1000
+  );
 });
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+  scrollFunction();
+};
 mybutton = document.getElementById("BTN_TOP");
 function scrollFunction() {
-   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-   } else {
-      mybutton.style.display = "none";
-   }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
-
-document.getElementById("agenciasLink").onmouseover = function() {
-   document.getElementById("agenciasButton").src = "./img/Footer/agencias_luciernagas_bosque_magico.png";
+document.getElementById("agenciasLink").onmouseover = function () {
+  document.getElementById("agenciasButton").src =
+    "./img/Footer/agencias_luciernagas_bosque_magico.png";
 };
-document.getElementById("agenciasLink").onmouseout = function() {
-   document.getElementById("agenciasButton").src = "./img/Footer/agencias_bosque_magico.png";
+document.getElementById("agenciasLink").onmouseout = function () {
+  document.getElementById("agenciasButton").src =
+    "./img/Footer/agencias_bosque_magico.png";
 };
 
 /*document.getElementById("sierraNevada").onmouseover = function() {
