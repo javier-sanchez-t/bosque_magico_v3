@@ -67,7 +67,7 @@ ul {
   height: 485px;
 }
 
-.custom-slide{
+.custom-slide {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,6 +110,12 @@ ul {
 
 .section {
   margin-bottom: 80px;
+}
+
+.section-desc {
+  color: white;
+  padding: 0 50px;
+  padding-bottom: 40px;
 }
 
 .center {
@@ -314,7 +320,7 @@ h1 {
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 80px;
   /*border-bottom: solid 5px #ffffff;*/
 }
 
@@ -325,7 +331,7 @@ h1 {
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 80px;
   /*border-bottom: solid 5px #ffffff;*/
 }
 
@@ -336,7 +342,7 @@ h1 {
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 80px;
   /*border-bottom: solid 5px #ffffff;*/
 }
 
@@ -387,7 +393,7 @@ h1 {
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 80px;
   /*border-bottom: solid 5px #ffffff;*/
 }
 
@@ -537,7 +543,7 @@ h1 {
   }
 
   .logoSection {
-    width: 90% !important;
+    width: 50% !important;
   }
 
   .optionsSection {
@@ -645,7 +651,7 @@ h1 {
   }
 
   .logoSection {
-    width: 40% !important;
+    width: 25% !important;
   }
 
   .w120 {
@@ -670,6 +676,22 @@ h1 {
 
   .padL20 {
     padding-left: 20px !important;
+  }
+
+  .padL15 {
+    padding-left: 15px !important;
+  }
+
+  .padR15 {
+    padding-right: 15px !important;
+  }
+
+  .padL30 {
+    padding-left: 30px !important;
+  }
+
+  .padR30 {
+    padding-right: 40px !important;
   }
 
   .padT20 {
