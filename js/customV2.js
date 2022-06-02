@@ -280,11 +280,11 @@ function scrollFunction() {
 
 document.getElementById("agenciasLink").onmouseover = function () {
   document.getElementById("agenciasButton").src =
-    "./img/Footer/agencias_luciernagas_bosque_magico.png";
+    "./img/Footer/agencias_bosque_magico.png";
 };
 document.getElementById("agenciasLink").onmouseout = function () {
   document.getElementById("agenciasButton").src =
-    "./img/Footer/agencias_bosque_magico.png";
+    "./img/Footer/agencias_luciernagas_bosque_magico.png";
 };
 
 /*document.getElementById("sierraNevada").onmouseover = function() {
