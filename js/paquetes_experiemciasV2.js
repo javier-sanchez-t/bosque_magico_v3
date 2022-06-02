@@ -6,10 +6,6 @@ window.onload = function () {
   var btnOption = "";
 
   switch (option) {
-    case 'PENA_TIGRE':
-      section = document.getElementById("PENA_TIGRE");
-      btnOption = document.getElementById("BTN_PENA_TIGRE");
-      break;
     case 'PAQUETE_BRONCE':
       section = document.getElementById("PAQUETE_BRONCE");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE");

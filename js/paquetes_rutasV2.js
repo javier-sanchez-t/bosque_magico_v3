@@ -6,6 +6,10 @@ window.onload = function () {
   var btnOption = "";
 
   switch (option) {
+    case 'PENA_TIGRE':
+      section = document.getElementById("PENA_TIGRE");
+      btnOption = document.getElementById("BTN_PENA_TIGRE");
+      break;
     case 'MONUMENTOS_HACIENDAS':
       section = document.getElementById("MONUMENTOS_HACIENDAS");
       btnOption = document.getElementById("BTN_MONUMENTOS_HACIENDAS");
