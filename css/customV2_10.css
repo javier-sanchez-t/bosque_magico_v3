@@ -298,7 +298,7 @@ h1 {
 }
 
 .indicaciones {
-  background-color: #FFCF00;
+  background-color: var(--bg_bosque_banner);
   color: #ffffff;
 }
 
