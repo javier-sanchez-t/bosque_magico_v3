@@ -16,10 +16,6 @@ window.onload = function () {
   ];
 
   switch (option) {
-    case "SENDERISMO":
-      section = document.getElementById("SENDERISMO");
-      btnOption = document.getElementById("BTN_SENDERISMO");
-      break;
     case "ESPACIO_PARA_ACAMPAR":
       section = document.getElementById("ESPACIO_PARA_ACAMPAR");
       btnOption = document.getElementById("BTN_ESPACIO_PARA_ACAMPAR");

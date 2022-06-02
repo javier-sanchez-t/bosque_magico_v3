@@ -34,6 +34,10 @@ window.onload = function () {
       section = document.getElementById("AVISTAMIENTO_DE_LUCIERNAGAS");
       btnOption = document.getElementById("BTN_AVISTAMIENTO_DE_LUCIERNAGAS");
       break;
+    case "SENDERISMO":
+      section = document.getElementById("SENDERISMO");
+      btnOption = document.getElementById("BTN_SENDERISMO");
+      break;
     default:
       section = document.getElementById("AVISTAMIENTO_DE_LUCIERNAGAS");
       btnOption = document.getElementById("BTN_AVISTAMIENTO_DE_LUCIERNAGAS");
