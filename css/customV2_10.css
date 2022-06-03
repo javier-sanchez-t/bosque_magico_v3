@@ -1,11 +1,11 @@
 :root {
   --bg_luciernagas: #5f5b6c;
-  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
-  --bg_sierra_banner: rgb(25, 123, 187, 0.65);
-  --bg_hospedaje_banner: rgb(27, 19, 18, 0.65);
-  --bg_paquetes_banner: rgb(248, 26, 9, 0.65);
-  --bg_mercado_banner: rgb(227, 112, 4, 0.40);
-  --bg_bosque_banner: rgb(212, 173, 2, 0.70);
+  --bg_recorridos_banner: rgb(13, 97, 41, 0.70); 
+  --bg_sierra_banner: rgb(6, 68, 108, 0.70);
+  --bg_hospedaje_banner: rgb(65, 15, 87, 0.70);
+  --bg_paquetes_banner: rgb(255, 0, 0, 0.70); 
+  --bg_mercado_banner: rgb(255, 125, 0, 0.40);
+  --bg_bosque_banner: rgb(212, 173, 2, 0.70); 
   --page-font-color: white;
   --bg-navbar: #B6C2F5;
   --bg_footer: #0B1D6F;
