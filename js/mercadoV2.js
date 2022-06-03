@@ -45,5 +45,5 @@ window.onload = function () {
 
   btnOption.firstElementChild.classList.add("shadow");
   section.classList.add("show");
-  window.location.href = "#BTN_HAMBURGUESAS";
+  window.location.href = "#OPTIONS";
 };

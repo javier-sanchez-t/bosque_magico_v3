@@ -36,7 +36,7 @@ window.onload = function () {
   btnOption.firstElementChild.classList.add("shadow");
   section.classList.add("show");
   console.log("section", section);
-  window.location.href = "#OPTIONS";
+  window.location.href = "#SLIDER";
 
   if (sliderWrapper) {
     images.forEach((image) => {
