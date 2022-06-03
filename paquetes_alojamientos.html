@@ -31,6 +31,9 @@
       }
     }
   </script>
+
+  <!--NEW SLIDER-->
+  <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/customV2_10.css" />
   <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
@@ -239,7 +242,7 @@
 
 
   <!--PAQUETES-->
-  <div class="container paquetesSection" id="PAQUETES">
+  <div class="container paquetesSection section" id="PAQUETES">
     <div class="row paquetesBanner" style="padding: 10px 0 10px 0;" data-aos="fade-right">
       <div class="col-12 col-sm-6 order-sm-2 centerOnMobile padT20 padB20 padL0"
         style="padding: 20px 0px 20px 30px; text-align: center;">
@@ -343,12 +346,30 @@
   <!--END OF PAQUETES-->
 
 
+  <!-- Slider main container -->
+  <div class="container">
+    <div class="row">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+
+
   <!--PAQUETE_BRONCE_LA_TORRE-->
   <div style="display: none;" id="PAQUETE_BRONCE_LA_TORRE">
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Bronce Auto Hotel La Torre</h1>
           </div>
 
@@ -467,7 +488,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Bronce Hotel Alba</h1>
           </div>
 
@@ -595,7 +616,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Bronce Residencial Los Pinos</h1>
           </div>
 
@@ -717,7 +738,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino La Finca Zayas</h1>
           </div>
 
@@ -801,7 +822,7 @@
               <li>
                 Guía a bordo
               </li>
-            </ul> 
+            </ul>
             <br>
 
 
@@ -839,7 +860,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Hacienda San Cayetano</h1>
           </div>
 
@@ -922,7 +943,7 @@
               <li>
                 Guía a bordo
               </li>
-            </ul> 
+            </ul>
             <br>
 
 
@@ -960,7 +981,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Villas del Bosque</h1>
           </div>
 
@@ -1050,7 +1071,7 @@
               <li>
                 Guía a bordo
               </li>
-            </ul> 
+            </ul>
             <br>
 
 
@@ -1088,7 +1109,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Piedra Canteada</h1>
           </div>
 
@@ -1166,7 +1187,7 @@
               <li>
                 Guía a bordo
               </li>
-            </ul> 
+            </ul>
             <br>
 
 
@@ -1204,7 +1225,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Cabañas Sierra Nevada</h1>
           </div>
 
@@ -1318,10 +1339,10 @@
               <li>
                 Guía a bordo
               </li>
-            </ul> 
+            </ul>
             <br>
 
-            
+
             <b>Extras:</b> <br>
             <ul>
               <li>
@@ -1507,7 +1528,8 @@
         <div style="padding-top: 20px;">
           <a id="agenciasLink" href="#" data-toggle="modal" data-target="#agenciasModal"
             onclick="clearModalAgencias();">
-            <img id="agenciasButton" style="width: 130px;" src="./img/Footer/agencias_luciernagas_bosque_magico.png" alt="Agencias">
+            <img id="agenciasButton" style="width: 130px;" src="./img/Footer/agencias_luciernagas_bosque_magico.png"
+              alt="Agencias">
           </a>
         </div>
       </div>
@@ -1766,6 +1788,9 @@
     crossorigin="anonymous"></script>
   <script src="./menu_assets/js/menu_overlay.js"></script>
   <script src="./js/smtp.js"></script>
+
+  <!--NEW SLIDER-->
+  <script src="./js/swiper-bundle.min.js"></script>
 
   <!--SCROLL EFECTS-->
   <link href="./css/AOS.css" rel="stylesheet">

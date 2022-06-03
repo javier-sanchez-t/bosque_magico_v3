@@ -31,6 +31,10 @@
       }
     }
   </script>
+
+
+  <!--NEW SLIDER-->
+  <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/customV2_10.css" />
   <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
@@ -239,7 +243,7 @@
 
 
   <!--PAQUETES-->
-  <div class="container paquetesSection" id="PAQUETES">
+  <div class="container paquetesSection section" id="PAQUETES">
     <div class="row paquetesBanner" style="padding: 10px 0 10px 0;" data-aos="fade-right">
       <div class="col-12 col-sm-6 order-sm-2 centerOnMobile padT20 padB20 padL0"
         style="padding: 20px 0px 20px 30px; text-align: center;">
@@ -302,12 +306,30 @@
   <!--END OF PAQUETES-->
 
 
+  <!-- Slider main container -->
+  <div class="container">
+    <div class="row">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+
+
   <!--PAQUETE_BRONCE-->
   <div style="display: none;" id="PAQUETE_BRONCE">
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Bronce Espacio para acampar</h1>
           </div>
 
@@ -404,7 +426,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Campamento</h1>
           </div>
 
@@ -520,7 +542,7 @@
     <div class="container">
       <div>
         <div class="row paquetesDes" data-aos="fade-up">
-          <div class="col-12" style="padding-top: 10px; text-align: center;">
+          <div class="col-12 title" style="text-align: center;">
             <h1>Paquete Platino Campamento Boutique</h1>
           </div>
 
@@ -1044,6 +1066,9 @@
     crossorigin="anonymous"></script>
   <script src="./menu_assets/js/menu_overlay.js"></script>
   <script src="./js/smtp.js"></script>
+
+  <!--NEW SLIDER-->
+  <script src="./js/swiper-bundle.min.js"></script>
 
   <!--SCROLL EFECTS-->
   <link href="./css/AOS.css" rel="stylesheet">
