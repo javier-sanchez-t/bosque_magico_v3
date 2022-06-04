@@ -52,17 +52,15 @@
     gtag('config', 'AW-849916386'); 
   </script>
 
-  <!-- Event snippet for Contacto Whatsapp conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQSTBXGXN2"></script>
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof (url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', { 'send_to': 'AW-849916386/oooPCLnx69ECEOLjopUD', 'event_callback': callback });
-      return false;
-    } 
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZQSTBXGXN2');
   </script>
 
 </head>
@@ -268,8 +266,8 @@
           alt="Ruta del pulque" loading="auto">
       </div>
       <div class="carousel-item">
-        <img class="imgCarrusel" src="./img/bosque_magico/slider/santuario_de_luciernagas_recorridos.jpg" class="d-block w-100"
-          alt="Santuario de las luciernagas" loading="auto">
+        <img class="imgCarrusel" src="./img/bosque_magico/slider/santuario_de_luciernagas_recorridos.jpg"
+          class="d-block w-100" alt="Santuario de las luciernagas" loading="auto">
       </div>
       <div class="carousel-item">
         <img class="imgCarrusel" src="./img/bosque_magico/slider/tranvia_santuario_luciernagas.jpeg"
@@ -450,8 +448,7 @@
 
       <div class="col-lg col-6 center">
         <a href="./rutas.html?option=SENDERISMO" class="hvr-bubble-float-bottom">
-          <img src="img/recorridos/senderismo.png" alt="Senderismo" style="width: 130px;"
-            class="optionsSection">
+          <img src="img/recorridos/senderismo.png" alt="Senderismo" style="width: 130px;" class="optionsSection">
         </a>
       </div>
     </div>
