@@ -12,39 +12,39 @@ window.onload = function () {
       section = document.getElementById("ESPACIO_PARA_ACAMPAR");
       btnOption = document.getElementById("BTN_ESPACIO_PARA_ACAMPAR");
       images = [
-        "./img/experiencias/espacio_para_acampar/area_de_acampado.jpg",
-        "./img/experiencias/espacio_para_acampar/area_de_campamento.jpg",
-        "./img/experiencias/espacio_para_acampar/campamento.jpg",
-        "./img/experiencias/espacio_para_acampar/campamento_santuario.jpg",
-        "./img/experiencias/espacio_para_acampar/camping_santuario_luciernagas.jpg",
-        "./img/experiencias/espacio_para_acampar/espacio_para_acampar.jpg",
-        "./img/experiencias/espacio_para_acampar/zona_de_camping.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/area_de_acampado.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/area_de_campamento.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/campamento.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/campamento_santuario.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/camping_santuario_luciernagas.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/espacio_para_acampar.jpg",
+        "./img_v2/experiencias/espacio_para_acampar/zona_de_camping.jpg",
       ];
       break;
     case "CAMPAMENTO":
       section = document.getElementById("CAMPAMENTO");
       btnOption = document.getElementById("BTN_CAMPAMENTO");
       images = [
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg",
-        "./img/experiencias/espacio_acampar/img_2.png",
-        "./img/experiencias/espacio_acampar/img_4.png",
-        "./img/experiencias/espacio_acampar/img_5.png",
+        "./img_v2/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg",
+        "./img_v2/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg",
+        "./img_v2/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg",
+        "./img_v2/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg",
+        "./img_v2/experiencias/espacio_acampar/img_2.png",
+        "./img_v2/experiencias/espacio_acampar/img_4.png",
+        "./img_v2/experiencias/espacio_acampar/img_5.png",
       ];
       break;
     case "CAMPAMENTO_BOUTIQUE":
       section = document.getElementById("CAMPAMENTO_BOUTIQUE");
       btnOption = document.getElementById("BTN_CAMPAMENTO_BOUTIQUE");
       images = [
-        "./img/experiencias/campamento_boutique/cabana.jpg",
-        "./img/experiencias/campamento_boutique/cabanas_glamping_santuario.jpg",
-        "./img/experiencias/campamento_boutique/glamping_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/glamping_tlaxcala.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabana_bosque_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabanas_santuario.jpg",
-        "./img/experiencias/campamento_boutique/santuario_de_luciernagas_tlaxcala.jpg",
+        "./img_v2/experiencias/campamento_boutique/cabana.jpg",
+        "./img_v2/experiencias/campamento_boutique/cabanas_glamping_santuario.jpg",
+        "./img_v2/experiencias/campamento_boutique/glamping_nanacamilpa.jpg",
+        "./img_v2/experiencias/campamento_boutique/glamping_tlaxcala.jpg",
+        "./img_v2/experiencias/campamento_boutique/mini_cabana_bosque_nanacamilpa.jpg",
+        "./img_v2/experiencias/campamento_boutique/mini_cabanas_santuario.jpg",
+        "./img_v2/experiencias/campamento_boutique/santuario_de_luciernagas_tlaxcala.jpg",
       ];
       break;
     default:

@@ -308,7 +308,7 @@ h1 {
 }
 
 .bosqueSection {
-  background-image: url(../img/bosque_magico/santuario_de_luciernagas.jpg);
+  background-image: url(../img_v2/bosque_magico/santuario_de_luciernagas.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -319,7 +319,7 @@ h1 {
 }
 
 .recorridosSection {
-  background-image: url(../img/recorridos/rutas_recorridos.jpg);
+  background-image: url(../img_v2/recorridos/rutas_recorridos.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -330,7 +330,7 @@ h1 {
 }
 
 .sierraNevadaSection {
-  background-image: url(../img/experiencias/campamento_bosque_magico.jpg);
+  background-image: url(../img_v2/experiencias/campamento_bosque_magico.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -341,7 +341,7 @@ h1 {
 }
 
 .hospedajeSection {
-  background-image: url(../img/alojamientos/alojamiento.jpg);
+  background-image: url(../img_v2/alojamientos/alojamiento.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -352,7 +352,7 @@ h1 {
 }
 
 .paquetesSection {
-  background-image: url(../img/paquetes/background.jpg);
+  background-image: url(../img_v2/paquetes/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -392,7 +392,7 @@ h1 {
 }
 
 .mercadoSection {
-  background-image: url(../img/mercado_estacion/background.jpg);
+  background-image: url(../img_v2/mercado_estacion/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -514,14 +514,14 @@ h1 {
 }
 
 .modal-content-facturas {
-  background-image: url("../img/luciernagas/bosque-magico-luciernagas-009.jpg");
+  background-image: url("../img_v2/luciernagas/bosque-magico-luciernagas-009.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
 }
 
 .modal-content-agencias {
-  background-image: url("../img/luciernagas/bosque-magico-luciernagas-003.jpg");
+  background-image: url("../img_v2/luciernagas/bosque-magico-luciernagas-003.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -1054,119 +1054,119 @@ h1 {
 
 .phoneIcon {
   background-size: 35px 35px;
-  background-image: url('../img/Footer/telefono_bosque_magico.png');
+  background-image: url('../img_v2/Footer/telefono_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .parentPhone:hover .phoneIcon {
-  background-image: url('../img/Footer/telefono_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/telefono_luciernagas_bosque_magico.png');
 }
 
 .emailIcon {
   background-size: 45px 45px;
-  background-image: url('../img/Footer/correo_bosque_magico.png');
+  background-image: url('../img_v2/Footer/correo_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .emailParent:hover .emailIcon {
   background-size: 45px 45px;
-  background-image: url('../img/Footer/correo_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/correo_luciernagas_bosque_magico.png');
 }
 
 .vuelosIcon {
   background-size: 20px 20px;
-  background-image: url('../img/Footer/vuelos.png');
+  background-image: url('../img_v2/Footer/vuelos.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .vuelosParent:hover .vuelosIcon {
   background-size: 20px 20px;
-  background-image: url('../img/Footer/vuelos_2.png');
+  background-image: url('../img_v2/Footer/vuelos_2.png');
 }
 
 .facturacionIcon {
   background-size: 55px 55px;
-  background-image: url('../img/Footer/facturacion_bosque_magico.png');
+  background-image: url('../img_v2/Footer/facturacion_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .facturacionParent:hover .facturacionIcon {
   background-size: 55px 55px;
-  background-image: url('../img/Footer/facturacion_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/facturacion_luciernagas_bosque_magico.png');
 }
 
 .calendarioIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/calendario_lunar_bosque_magico.png');
+  background-image: url('../img_v2/Footer/calendario_lunar_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .calendarioParent:hover .calendarioIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/calendario_lunar_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/calendario_lunar_luciernagas_bosque_magico.png');
 }
 
 .llegarIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/ubicacion_bosque_magico.png');
+  background-image: url('../img_v2/Footer/ubicacion_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .llegarParent:hover .llegarIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/ubicacion_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/ubicacion_luciernagas_bosque_magico.png');
 }
 
 .facebookIcon {
   background-size: 50px 50px;
-  background-image: url('../img/Footer/like_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/like_luciernagas_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .facebookParent:hover .facebookIcon {
   background-size: 50px 50px;
-  background-image: url('../img/Footer/like_bosque_magico.png');
+  background-image: url('../img_v2/Footer/like_bosque_magico.png');
 }
 
 .instagramIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/instagram_bosque_magico.png');
+  background-image: url('../img_v2/Footer/instagram_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .instagramParent:hover .instagramIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/instagram_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/instagram_luciernagas_bosque_magico.png');
 }
 
 .bloggerIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/blog_bosque_magico.png');
+  background-image: url('../img_v2/Footer/blog_bosque_magico.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bloggerParent:hover .bloggerIcon {
   background-size: 60px 60px;
-  background-image: url('../img/Footer/blog_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/blog_luciernagas_bosque_magico.png');
 }
 
 .whatsIcon {
   background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../img/Footer/whatsapp_bosque_magico.png');
+  background-image: url('../img_v2/Footer/whatsapp_bosque_magico.png');
 }
 
 .whatsIcon:hover {
   background-size: 35px 35px;
-  background-image: url('../img/Footer/whatsapp_luciernagas_bosque_magico.png');
+  background-image: url('../img_v2/Footer/whatsapp_luciernagas_bosque_magico.png');
 }

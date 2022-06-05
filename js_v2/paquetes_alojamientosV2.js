@@ -6,52 +6,52 @@ window.onload = function () {
   var btnOption = "";
   var sliderWrapper = document.getElementsByClassName("swiper-wrapper")[0];
   var images = [
-    "./img/paquetes/circuito_tranvia_bosque_magico.jpg",
-    "./img/paquetes/ruta_del_pulque_nanacamilpa.jpg",
-    "./img/paquetes/santuario_luciernagas_tlaxcala.jpg",
+    "./img_v2/paquetes/circuito_tranvia_bosque_magico.jpg",
+    "./img_v2/paquetes/ruta_del_pulque_nanacamilpa.jpg",
+    "./img_v2/paquetes/santuario_luciernagas_tlaxcala.jpg",
   ];
 
   switch (option) {
     case "PAQUETE_BRONCE_LA_TORRE":
       section = document.getElementById("PAQUETE_BRONCE_LA_TORRE");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE_LA_TORRE");
-      images.push("./img/alojamientos/Auto_hotel_la_torre/rancho_la_torre.jpg");
+      images.push("./img_v2/alojamientos/Auto_hotel_la_torre/rancho_la_torre.jpg");
       break;
     case "PAQUETE_BRONCE_HOTEL_ALBA":
       section = document.getElementById("PAQUETE_BRONCE_HOTEL_ALBA");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE_HOTEL_ALBA");
-      images.push("./img/paquetes/alojamientos/hotel_alba/fachada_hotel_alba.jpg");
-      images.push("./img/paquetes/alojamientos/hotel_alba/habitacion_sencilla_hotel_alba.jpg");
+      images.push("./img_v2/paquetes/alojamientos/hotel_alba/fachada_hotel_alba.jpg");
+      images.push("./img_v2/paquetes/alojamientos/hotel_alba/habitacion_sencilla_hotel_alba.jpg");
       break;
     case "PAQUETE_BRONCE_LOS_PINOS":
       section = document.getElementById("PAQUETE_BRONCE_LOS_PINOS");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE_LOS_PINOS");
-      images.push("./img/paquetes/alojamientos/los_pinos/habitacion_adicional_posada_los_pinos.jpg");
-      images.push("./img/paquetes/alojamientos/los_pinos/habitacion_sencilla_posada_los_pinos.jpg");
+      images.push("./img_v2/paquetes/alojamientos/los_pinos/habitacion_adicional_posada_los_pinos.jpg");
+      images.push("./img_v2/paquetes/alojamientos/los_pinos/habitacion_sencilla_posada_los_pinos.jpg");
       break;
     case "PAQUETE_FINCA_ZAYAS":
       section = document.getElementById("PAQUETE_FINCA_ZAYAS");
       btnOption = document.getElementById("BTN_PAQUETE_FINCA_ZAYAS");
-      images.push("./img/paquetes/alojamientos/finca_zayas/finca_zayas.jpg");
-      images.push("./img/paquetes/alojamientos/finca_zayas/habitaciones_la_finca_zayas.jpg");
-      images.push("./img/paquetes/alojamientos/finca_zayas/hospedaje_finca_zayas.jpg");
+      images.push("./img_v2/paquetes/alojamientos/finca_zayas/finca_zayas.jpg");
+      images.push("./img_v2/paquetes/alojamientos/finca_zayas/habitaciones_la_finca_zayas.jpg");
+      images.push("./img_v2/paquetes/alojamientos/finca_zayas/hospedaje_finca_zayas.jpg");
       break;
     case "PAQUETE_PLATINO_SAN_CAYETANO":
       section = document.getElementById("PAQUETE_PLATINO_SAN_CAYETANO");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_SAN_CAYETANO");
-      images.push("./img/paquetes/alojamientos/san_cayetano/habitacion_hacienda_san_cayetano.jpg");
+      images.push("./img_v2/paquetes/alojamientos/san_cayetano/habitacion_hacienda_san_cayetano.jpg");
       break;
     case "PAQUETE_PLATINO_VILLAS_BOSQUE":
       section = document.getElementById("PAQUETE_PLATINO_VILLAS_BOSQUE");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_VILLAS_BOSQUE");
-      images.push("./img/paquetes/alojamientos/villas_del_bosque/cabana_villas_del_bosque.jpg");
-      images.push("./img/paquetes/alojamientos/villas_del_bosque/sala_cabana_santa_clara.jpg");
+      images.push("./img_v2/paquetes/alojamientos/villas_del_bosque/cabana_villas_del_bosque.jpg");
+      images.push("./img_v2/paquetes/alojamientos/villas_del_bosque/sala_cabana_santa_clara.jpg");
       break;
     case "PAQUETE_PIEDRA_CANTEADA":
       section = document.getElementById("PAQUETE_PIEDRA_CANTEADA");
       btnOption = document.getElementById("BTN_PAQUETE_PIEDRA_CANTEADA");
-      images.push("./img/paquetes/alojamientos/piedra_canteada/cabana_doble_piedra_canteada.jpg");
-      images.push("./img/paquetes/alojamientos/piedra_canteada/camino_piedra_canteada.jpg");
+      images.push("./img_v2/paquetes/alojamientos/piedra_canteada/cabana_doble_piedra_canteada.jpg");
+      images.push("./img_v2/paquetes/alojamientos/piedra_canteada/camino_piedra_canteada.jpg");
       break;
     case "PAQUETE_PLATINO_SIERRA_NEVADA":
       section = document.getElementById("PAQUETE_PLATINO_SIERRA_NEVADA");

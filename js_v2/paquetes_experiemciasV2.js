@@ -6,18 +6,18 @@ window.onload = function () {
   var btnOption = "";
   var sliderWrapper = document.getElementsByClassName("swiper-wrapper")[0];
   var images = [
-    "./img/paquetes/circuito_tranvia_bosque_magico.jpg",
-    "./img/paquetes/ruta_del_pulque_nanacamilpa.jpg",
-    "./img/paquetes/santuario_luciernagas_tlaxcala.jpg",
+    "./img_v2/paquetes/circuito_tranvia_bosque_magico.jpg",
+    "./img_v2/paquetes/ruta_del_pulque_nanacamilpa.jpg",
+    "./img_v2/paquetes/santuario_luciernagas_tlaxcala.jpg",
   ];
 
   switch (option) {
     case "PAQUETE_BRONCE":
       section = document.getElementById("PAQUETE_BRONCE");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE");
-      images.push("./img/paquetes/experiencias/campamento/campamento.jpg");
-      images.push("./img/paquetes/experiencias/campamento/camping_santuario_luciernagas.jpg");
-      images.push("./img/paquetes/experiencias/campamento/espacio_para_acampar.jpg");
+      images.push("./img_v2/paquetes/experiencias/campamento/campamento.jpg");
+      images.push("./img_v2/paquetes/experiencias/campamento/camping_santuario_luciernagas.jpg");
+      images.push("./img_v2/paquetes/experiencias/campamento/espacio_para_acampar.jpg");
       break;
     case "PAQUETE_PLATINO":
       section = document.getElementById("PAQUETE_PLATINO");
