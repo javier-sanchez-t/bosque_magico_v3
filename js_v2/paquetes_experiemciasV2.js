@@ -5,60 +5,34 @@ window.onload = function () {
   var section = "";
   var btnOption = "";
   var sliderWrapper = document.getElementsByClassName("swiper-wrapper")[0];
-  var images = [];
+  var images = [
+    "./img/paquetes/circuito_tranvia_bosque_magico.jpg",
+    "./img/paquetes/ruta_del_pulque_nanacamilpa.jpg",
+    "./img/paquetes/santuario_luciernagas_tlaxcala.jpg",
+  ];
 
   switch (option) {
     case "PAQUETE_BRONCE":
       section = document.getElementById("PAQUETE_BRONCE");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE");
-      images = [
-        "./img/experiencias/espacio_para_acampar/area_de_acampado.jpg",
-        "./img/experiencias/espacio_para_acampar/area_de_campamento.jpg",
-        "./img/experiencias/espacio_para_acampar/campamento.jpg",
-        "./img/experiencias/espacio_para_acampar/campamento_santuario.jpg",
-        "./img/experiencias/espacio_para_acampar/camping_santuario_luciernagas.jpg",
-        "./img/experiencias/espacio_para_acampar/espacio_para_acampar.jpg",
-        "./img/experiencias/espacio_para_acampar/zona_de_camping.jpg",
-      ];
+      images.push("./img/paquetes/experiencias/campamento/campamento.jpg");
+      images.push("./img/paquetes/experiencias/campamento/camping_santuario_luciernagas.jpg");
+      images.push("./img/paquetes/experiencias/campamento/espacio_para_acampar.jpg");
       break;
     case "PAQUETE_PLATINO":
       section = document.getElementById("PAQUETE_PLATINO");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO");
-      images = [
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg",
-        "./img/experiencias/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg",
-        "./img/experiencias/espacio_acampar/img_2.png",
-        "./img/experiencias/espacio_acampar/img_4.png",
-        "./img/experiencias/espacio_acampar/img_5.png",
-      ];
+      
       break;
     case "PAQUETE_PLATINO_BOUTIQUE":
       section = document.getElementById("PAQUETE_PLATINO_BOUTIQUE");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_BOUTIQUE");
-      images = [
-        "./img/experiencias/campamento_boutique/cabana.jpg",
-        "./img/experiencias/campamento_boutique/cabanas_glamping_santuario.jpg",
-        "./img/experiencias/campamento_boutique/glamping_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/glamping_tlaxcala.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabana_bosque_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabanas_santuario.jpg",
-        "./img/experiencias/campamento_boutique/santuario_de_luciernagas_tlaxcala.jpg",
-      ];
+      
       break;
     default:
       section = document.getElementById("PAQUETE_PLATINO_BOUTIQUE");
       btnOption = document.getElementById("BTN_PAQUETE_PLATINO_BOUTIQUE");
-      images = [
-        "./img/experiencias/campamento_boutique/cabana.jpg",
-        "./img/experiencias/campamento_boutique/cabanas_glamping_santuario.jpg",
-        "./img/experiencias/campamento_boutique/glamping_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/glamping_tlaxcala.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabana_bosque_nanacamilpa.jpg",
-        "./img/experiencias/campamento_boutique/mini_cabanas_santuario.jpg",
-        "./img/experiencias/campamento_boutique/santuario_de_luciernagas_tlaxcala.jpg",
-      ];
+      
   }
 
   btnOption.firstElementChild.classList.add("shadow");
