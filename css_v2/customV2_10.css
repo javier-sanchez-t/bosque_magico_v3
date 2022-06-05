@@ -6,6 +6,11 @@
   --bg_paquetes_banner: rgb(255, 0, 0, 0.70); 
   --bg_mercado_banner: rgb(255, 125, 0, 0.40);
   --bg_bosque_banner: rgb(212, 173, 2, 0.70); 
+  --bg-recorridos: #205e2c;
+  --bg-campamento: #103d62;
+  --bg-alojamientos: #582c65;
+  --bg-mercado: #e07619;
+  --bg-paquetes: #e00a10;
   --page-font-color: white;
   --bg-navbar: #B6C2F5;
   --bg_footer: #0B1D6F;
@@ -278,22 +283,22 @@ h1 {
 }
 
 .recorridos {
-  background-color: #0D6129;
+  background-color: var(--bg-recorridos);
   color: #ffffff;
 }
 
 .campamento {
-  background-color: #06446C;
+  background-color: var(--bg-campamento);
   color: #ffffff;
 }
 
 .hospedaje {
-  background-color: #410F57;
+  background-color: var(--bg-alojamientos);
   color: #ffffff;
 }
 
 .mercado {
-  background-color: #FF7D00;
+  background-color: var(--bg-mercado);
   color: #ffffff;
 }
 
@@ -383,7 +388,7 @@ h1 {
 .paquetesDes {
   font-size: 22px;
   color: #ffffff;
-  background-color: #FF0000;
+  background-color: var(--bg-paquetes);
 }
 
 .mercadoSection {
