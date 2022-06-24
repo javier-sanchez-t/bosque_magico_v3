@@ -156,7 +156,7 @@ function sendAgenciasForm() {
          <table width="100%" style="margin: 0 auto;" border="0" role="presentation" border="0" cellpadding="0" cellspacing="0">
             <tr>
                <td align="center">
-               <img src="https://www.bosquemagico.com.mx/img_v2/header/bosque_magico_V2.png" style="width: 120px;"> <br/><br/>
+               <img src="https://www.bosquemagico.com.mx/img_v3/header/bosque_magico_V2.png" style="width: 120px;"> <br/><br/>
                </td>
             </tr>
 
@@ -234,7 +234,7 @@ function sendFacturasForm() {
         <table width="100%" style="margin: 0 auto;" border="0" role="presentation" border="0" cellpadding="0" cellspacing="0">
            <tr>
               <td align="center">
-              <img src="https://www.bosquemagico.com.mx/img_v2/header/bosque_magico_V2.png" style="width: 120px;"> <br/><br/>
+              <img src="https://www.bosquemagico.com.mx/img_v3/header/bosque_magico_V2.png" style="width: 120px;"> <br/><br/>
               </td>
            </tr>
 
@@ -280,23 +280,23 @@ function scrollFunction() {
 
 document.getElementById("agenciasLink").onmouseover = function () {
   document.getElementById("agenciasButton").src =
-    "./img_v2/Footer/agencias_bosque_magico.png";
+    "./img_v3/Footer/agencias_bosque_magico.png";
 };
 document.getElementById("agenciasLink").onmouseout = function () {
   document.getElementById("agenciasButton").src =
-    "./img_v2/Footer/agencias_luciernagas_bosque_magico.png";
+    "./img_v3/Footer/agencias_luciernagas_bosque_magico.png";
 };
 
 /*document.getElementById("sierraNevada").onmouseover = function() {
-   document.getElementById("sierraNevada").src = "./img_v2/Footer/logo_cabanas_sierra_nevada.png";
+   document.getElementById("sierraNevada").src = "./img_v3/Footer/logo_cabanas_sierra_nevada.png";
 };
 document.getElementById("sierraNevada").onmouseout = function() {
-   document.getElementById("sierraNevada").src = "./img_v2/Footer/logo_sierra_nevada.png";
+   document.getElementById("sierraNevada").src = "./img_v3/Footer/logo_sierra_nevada.png";
 };
 
 document.getElementById("laAntigua").onmouseover = function() {
-   document.getElementById("laAntigua").src = "./img_v2/Footer/logo_cafe_la_antigua.png";
+   document.getElementById("laAntigua").src = "./img_v3/Footer/logo_cafe_la_antigua.png";
 };
 document.getElementById("laAntigua").onmouseout = function() {
-   document.getElementById("laAntigua").src = "./img_v2/Footer/logo_la_antigua.png";
+   document.getElementById("laAntigua").src = "./img_v3/Footer/logo_la_antigua.png";
 };*/
