@@ -16,7 +16,9 @@ window.onload = function () {
     case "PAQUETE_BRONCE_LA_TORRE":
       section = document.getElementById("PAQUETE_BRONCE_LA_TORRE");
       btnOption = document.getElementById("BTN_PAQUETE_BRONCE_LA_TORRE");
-      images.push("./img_v3/alojamientos/Auto_hotel_la_torre/rancho_la_torre.jpg");
+      images.push("./img_v3/paquetes/alojamientos/la_torre/3_magueyes_la_torre.jpg");
+      images.push("./img_v3/paquetes/alojamientos/la_torre/entrada_habitacion.jpg");
+      images.push("./img_v3/paquetes/alojamientos/la_torre/toalla_la_torre.jpg");
       break;
     case "PAQUETE_BRONCE_HOTEL_ALBA":
       section = document.getElementById("PAQUETE_BRONCE_HOTEL_ALBA");
