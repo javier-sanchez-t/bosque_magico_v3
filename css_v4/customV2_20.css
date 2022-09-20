@@ -1,11 +1,11 @@
 :root {
   --bg_luciernagas: #5f5b6c;
-  --bg_recorridos_banner: rgb(13, 97, 41, 0.70); 
+  --bg_recorridos_banner: rgb(13, 97, 41, 0.70);
   --bg_sierra_banner: rgb(6, 68, 108, 0.70);
   --bg_hospedaje_banner: rgb(65, 15, 87, 0.70);
-  --bg_paquetes_banner: rgb(255, 0, 0, 0.70); 
+  --bg_paquetes_banner: rgb(255, 0, 0, 0.70);
   --bg_mercado_banner: rgb(255, 125, 0, 0.40);
-  --bg_bosque_banner: rgb(212, 173, 2, 0.70); 
+  --bg_bosque_banner: rgb(212, 173, 2, 0.70);
   --bg-recorridos: #205e2c;
   --bg-campamento: #103d62;
   --bg-alojamientos: #582c65;
@@ -20,12 +20,12 @@
 
 @font-face {
   font-family: 'HelveticaText';
-  src: url('../css_v3/fonts/Helvetica_LT_Std_Condensed.woff') format('woff');
+  src: url('../css_v4/fonts/Helvetica_LT_Std_Condensed.woff') format('woff');
 }
 
 @font-face {
   font-family: 'HelveticaTitles';
-  src: url('../css_v3/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
+  src: url('../css_v4/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
 }
 
 @font-face {
@@ -578,6 +578,10 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  p {
+    font-size: 1.2rem;
+  }
+
   .luciernagasBanner>h1 {
     font-size: 1.5rem;
   }
